@@ -16,13 +16,16 @@
 default_platform(:ios)
 
 lane :tests do
-  run_tests(scheme: "FastlaneTest")
+  run_tests(devices: ["iPhone X"],
+scheme: "FastlaneTest")
 end
 
-platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
+    get_certificates           # invokes cert
+    get_provisioning_profile   # invokes sigh
+    tests
     build_app(scheme: "fastlaneTest")
     upload_to_testflight
   end
-end
+

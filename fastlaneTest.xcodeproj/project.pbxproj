@@ -376,7 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DY95X747ZU;
 				INFOPLIST_FILE = fastlaneTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -385,6 +385,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "info-alessandromanni.com.fastlaneTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fastlaneTest_developer;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,7 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DY95X747ZU;
 				INFOPLIST_FILE = fastlaneTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "info-alessandromanni.com.fastlaneTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fastlaneTest_developer;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
