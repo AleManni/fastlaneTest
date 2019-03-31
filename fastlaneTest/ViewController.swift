@@ -10,11 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var tableView: UITableView!
+  let presenter = Presenter()
+  private var dataSource: [String] = []
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    presenter.displayable = self
+    presenter.start()
+    tableView.dataSource = self
+  }
+}
+
+extension ViewController: Displayable {
+  func populate(with model: [String]) {
+    dataSource = model
+    tableView.reloadData()
+  }
+}
+
+
+extension ViewController: UITableViewDataSource {
+
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return dataSource.count
   }
 
-
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+    cell.textLabel?.text = dataSource[indexPath.row]
+    return cell
+  }
 }
 
