@@ -18,8 +18,8 @@ setup_travis
 default_platform(:ios)
 
 lane :tests do
-  run_tests(devices: ["iPhone X"],
-scheme: "FastlaneTest")
+  run_tests(devices: ["iPhone 8"],
+scheme: "fastlaneTest")
 end
 
   desc "Push a new beta build to TestFlight"
