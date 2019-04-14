@@ -4,7 +4,3 @@ install:
   - bundle install
 script:
   - fastlane tests
-
-branches:
-  only:
-  - develop
