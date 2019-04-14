@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='fastlaneTestTests.xctest' tests='1' failures='0'>
+  <testsuite name='fastlaneTestTests.fastlaneTestTests' tests='1' failures='0'>
+    <testcase classname='fastlaneTestTests.fastlaneTestTests' name='testPresenter' time='0.018'/>
+  </testsuite>
+</testsuites>
