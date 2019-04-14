@@ -11,15 +11,15 @@
 #
 
 # Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+update_fastlane
 
 setup_travis
 
 default_platform(:ios)
 
 lane :tests do
-  run_tests(devices: ["iPhone X"],
-scheme: "FastlaneTest")
+  run_tests(devices: ["iPhone 6s"],
+scheme: "fastlaneTest")
 end
 
   desc "Push a new beta build to TestFlight"

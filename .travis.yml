@@ -1,10 +1,9 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode10.1
 install:
   - bundle install
 script:
   - fastlane tests
-
 branches:
-  only:
-  - develop
+ only:
+   - develop
