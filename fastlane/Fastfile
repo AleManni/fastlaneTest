@@ -18,7 +18,7 @@ setup_travis
 default_platform(:ios)
 
 lane :tests do
-  run_tests(devices: ["iPhone 8"],
+  run_tests(devices: ["iPhone 6s"],
 scheme: "fastlaneTest")
 end
 
